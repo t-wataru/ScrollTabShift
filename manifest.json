@@ -1,0 +1,24 @@
+{
+   "manifest_version": 2,
+   "name": "Scroll shift tab",
+   "description": "right click + scroll to change tab",
+   "version": "1.0.0",
+   "content_scripts": [ {
+      "all_frames": true,
+      "matches": [ "http://*/*", "https://*/*", "ftp://*/*" ],
+      "js": [ "pagescript.js" ]
+   } ],
+   "icons": {
+      "48": "back48.png",
+      "128": "back128.png"
+   },
+   "permissions": [
+     "tabs",
+     "<all_urls>"
+   ],
+   "background": {
+     "scripts": [
+       "background.js"
+     ]
+   }
+}
