@@ -5,7 +5,7 @@ function debugLog(message) {
 
 window.onwheel=wheelEvent=>{
   debugLog(wheelEvent);
-  if(wheelEvent.buttons != 2) {
+  if(wheelEvent.buttons != 1 && !wheelEvent.shiftKey) {
     return;
   }
 

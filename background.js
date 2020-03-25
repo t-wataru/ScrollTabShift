@@ -19,6 +19,6 @@ browser.runtime.onMessage.addListener(async (message, sender) => {
       debugLog("down");
       let rightTab = (await browser.tabs.query({index:currentTab.index+1}))[0];
       debugLog(rightTab);
-      browser.tabs.update(rightTab.id, {active: true})
+      browser.tabs.update(rightTab.id, {active: true});
   }
 });
