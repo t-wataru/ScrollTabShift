@@ -1,11 +1,11 @@
-let bt3debug = true;
+let bt3debug = false;
 function debugLog(message) {
   bt3debug && console.log(message)
 }
 
 window.onwheel=wheelEvent=>{
   debugLog(wheelEvent);
-  if(!(wheelEvent.buttons == 2 || wheelEvent.altKey)) {
+  if(!(wheelEvent.buttons == 2 || wheelEvent.shiftKey)) {
     return;
   }
 
