@@ -1,11 +1,11 @@
-let bt3debug = false;
+let bt3debug = true;
 function debugLog(message) {
   bt3debug && console.log(message)
 }
 
 window.onwheel=wheelEvent=>{
   debugLog(wheelEvent);
-  if(wheelEvent.buttons != 1 && !wheelEvent.shiftKey) {
+  if(!(wheelEvent.buttons == 2 || wheelEvent.altKey)) {
     return;
   }
 
@@ -20,5 +20,4 @@ window.onwheel=wheelEvent=>{
     debugLog("up");
     browser.runtime.sendMessage({scrollTab: "up"});
   }
-  
 }
