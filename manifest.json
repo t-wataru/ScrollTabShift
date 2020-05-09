@@ -2,7 +2,7 @@
    "manifest_version": 2,
    "name": "Scroll tab shift",
    "description": "Right click or Shift + scroll to change tab",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "content_scripts": [ {
       "all_frames": true,
       "matches": [ "http://*/*", "https://*/*", "ftp://*/*" ],
