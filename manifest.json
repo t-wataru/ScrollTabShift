@@ -1,6 +1,6 @@
 {
    "manifest_version": 2,
-   "name": "Scroll to swap tab",
+   "name": "Scroll tab shift",
    "description": "Right click or Shift + scroll to change tab",
    "version": "1.0.1",
    "content_scripts": [ {
