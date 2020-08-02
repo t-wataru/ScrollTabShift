@@ -1,7 +1,5 @@
-let bt3debug = false;
-function debugLog(message) {
-  bt3debug && console.log(message)
-}
+let debug = false;
+debugLog = debug ? console.log.bind(null, "DEBUG: ") : ()=>{};
 
 browser.runtime.onMessage.addListener(async (message, sender) => {
     debugLog("got messsage", message);
